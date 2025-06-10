@@ -47,11 +47,12 @@
     document.getElementById('resumeForm').addEventListener('submit', function() {
         document.getElementById('loading').style.display = 'block';
     });
+
 </script>
 </head>
 <body>
     <h2>Resume Tailoring Form</h2>
-    <form action="YOUR_N8N_WEBHOOK_URL" method="POST" enctype="multipart/form-data" id="resumeForm">
+    <form action="http://localhost:5678/webhook-test/3c9eba09-97c8-46e8-91ed-a60fb712b52c" method="POST" enctype="multipart/form-data" id="resumeForm">
         <label for="jobDescription">Job Description:</label>
         <textarea name="jobDescription" id="jobDescription" rows="10" required></textarea>
 
